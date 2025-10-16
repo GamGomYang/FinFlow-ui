@@ -635,9 +635,9 @@ async def explain_irt_prediction(request: PredictionRequest):
 
 if __name__ == "__main__":
     uvicorn.run(
-        "rl_inference_server:app",
+        "irt_inference_server:app",
         host="0.0.0.0",
         port=8000,
-        reload=False,  # reload를 False로 변경
+        reload=True,
         log_level="info",
     )
